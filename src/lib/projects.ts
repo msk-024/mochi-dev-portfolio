@@ -4,6 +4,7 @@ export const projects: Project[] = [
   {
     id: "app1",
     type: "app",
+    domain: "nurse",
     title: "Todo Master",
     description: "シンプルなタスク管理アプリ",
     image: "/images/aboutsecondbgsp.jpg",
@@ -29,6 +30,7 @@ export const projects: Project[] = [
   {
     id: "app2",
     type: "app",
+    domain: "tools",
     title: "Weather Now",
     description: "天気予報アプリ（React + API）",
     image: "/images/bangkokbgsp.jpg",
@@ -41,6 +43,7 @@ export const projects: Project[] = [
   {
     id: "app3",
     type: "app",
+    domain: "tools",
     title: "Finance Tracker",
     description: "収支管理アプリ",
     image: "/images/classbgsp.jpg",
@@ -53,6 +56,7 @@ export const projects: Project[] = [
   {
     id: "web1",
     type: "website",
+    domain: "web",
     title: "Portfolio Site",
     description: "デザイナー向け個人サイト",
     image: "/images/main.jpg",
@@ -65,6 +69,7 @@ export const projects: Project[] = [
   {
     id: "web2",
     type: "website",
+    domain: "web",
     title: "Cafe Landing Page",
     description: "おしゃれなカフェのLP",
     image: "/images/classbg.jpg",

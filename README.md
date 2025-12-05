@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# mochi-dev-portfolio
 
-## Getting Started
+Next.js / TypeScript / Tailwind CSS を使用して構築した個人ポートフォリオです。  
+開発実績・技術記事・看護師向け計算ツールなど、制作物を一覧で確認できるよう最適化しています。
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Validation:** Zod
+- **Deployment:** Vercel
+
+---
+
+## ✨ Overview
+
+- プロジェクト一覧ページ（カード UI）
+- 各プロジェクトの詳細ページ（目的・技術構成・学び・改善点）
+- 看護師向け計算ツール（電解質 / 輸血 / 酸素投与 / BMI 等）
+- オンボーディング・並び替え機能
+- コンポーネント分割と型安全性を重視した設計
+
+---
+
+## 📁 Project Structure
+
+```yaml
+/app
+/components
+/features
+/hooks
+/lib
+/styles
+/public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+## 📦 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Vercel による CI/CD（main ブランチを自動デプロイ）。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Skills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- HTML / CSS / SCSS / BEM
+- JavaScript / jQuery
+- WordPress（オリジナルテーマ開発）
+- React / Next.js / TypeScript
+- Tailwind CSS
 
-## Deploy on Vercel
+## 👤 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+mochi
+Frontend Developer
+React / Next.js / TypeScript を中心に開発。
+WordPress / JavaScript / jQuery

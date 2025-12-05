@@ -1,11 +1,14 @@
 export type ProjectType = "app" | "website";
 
+export type ProjectDomain = "nurse" | "tools" | "web";
+
 export interface Project {
   id: string; // 一意のID
   type: ProjectType; // "app" or "website"
   title: string; // プロジェクト名
   description: string; // 短い説明
   image: string; // サムネイル画像のパス
+  domain: ProjectDomain; // ポートフォリオとしてのカテゴリ
   gallery?: string[]; // スクショ配列
   demoUrl?: string; // Live Demo / Visit Site
   githubUrl?: string; // GitHubリポジトリ
@@ -21,4 +24,3 @@ export interface Project {
   story?: string;
   roadmap?: string[];
 }
-
