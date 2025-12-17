@@ -1,6 +1,7 @@
-import { Project } from "./types";
+// app集
+import type { Project } from "@/lib/types";
 
-export const projects: Project[] = [
+export const appProjects: Project[] = [
   {
     id: "app1",
     type: "app",
@@ -9,7 +10,7 @@ export const projects: Project[] = [
     description: "シンプルなタスク管理アプリ",
     image: "/images/aboutsecondbgsp.jpg",
     gallery: ["/images/app1-1.jpg", "/images/app1-2.jpg", "/images/app1-3.jpg"],
-    demoUrl: "#",
+    demoUrl: "",
     githubUrl: "#",
     overview:
       "日々の看護業務で発生する『抜け漏れ』を減らすために作ったタスク管理アプリです。",
@@ -52,31 +53,5 @@ export const projects: Project[] = [
     githubUrl: "#",
     details:
       "ReactとTypeScriptで作成。状態管理とフォーム処理に苦労しましたが、Context APIで整理しました。",
-  },
-  {
-    id: "web1",
-    type: "website",
-    domain: "web",
-    title: "Portfolio Site",
-    description: "デザイナー向け個人サイト",
-    image: "/images/main.jpg",
-    gallery: ["/images/web1-1.jpg", "/images/web1-2.jpg"],
-    demoUrl: "#",
-    caseStudyUrl: "#",
-    details:
-      "Next.jsとTailwind CSSで制作。レスポンシブ対応とアクセシビリティを意識しました。",
-  },
-  {
-    id: "web2",
-    type: "website",
-    domain: "web",
-    title: "Cafe Landing Page",
-    description: "おしゃれなカフェのLP",
-    image: "/images/classbg.jpg",
-    gallery: ["/images/web1-1.jpg", "/images/web1-2.jpg"],
-    demoUrl: "#",
-    caseStudyUrl: "#",
-    details:
-      "Next.jsとTailwind CSSで制作。レスポンシブ対応とアクセシビリティを意識しました。",
   },
 ];

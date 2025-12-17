@@ -21,25 +21,26 @@ export default function WebsiteCard({ project }: Props) {
         {/* 左：サムネイル（詳細ページへリンク） */}
         <Link
           href={`/projects/${project.id}`}
-          className="relative block w-full overflow-hidden rounded-2xl bg-slate-100 md:w-2/5"
+          className="block w-full md:w-[44%]"
+          aria-label={`${project.title} の詳細を見る`}
         >
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={800}
-            height={500}
-            className="h-full w-full object-cover"
-          />
+          <div className="relative w-full overflow-hidden rounded-2xl bg-slate-100 aspect-video">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              sizes="(min-width: 768px) 44vw, 100vw"
+              className="object-cover"
+              priority={false}
+            />
+          </div>
         </Link>
-
         {/* 右：テキスト＋ボタン縦並び */}
         <div className="flex flex-1 flex-col justify-between gap-3">
-          <div>
-            <Link href={`/projects/${project.id}`}>
-              <h3 className="text-base font-semibold text-slate-900">
-                {project.title}
-              </h3>
-            </Link>
+          <div className="inline-block">
+            <h3 className="text-base font-semibold text-slate-900">
+              {project.title}
+            </h3>
 
             {techLabel && (
               <p className="mt-1 text-xs font-medium text-sky-700">

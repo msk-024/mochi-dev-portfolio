@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { projects } from "@/lib/projects";
+import { projects } from "@/lib/projects/index";
 import { HomeAppRail } from "./_components/home/HomeAppRail";
 import { HomeWebRail } from "./_components/home/HomeWebRail";
 
